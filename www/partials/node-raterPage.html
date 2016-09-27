@@ -30,7 +30,8 @@
 		        	<span ng-if="noderp.itemType == 'Root Factor' " >
 		        		<img src="images/rf.svg" class="tree-dir-img">
 		        	</span>
-	        	<span>{{noderp.itemType}}</span>&nbsp;&nbsp;
+	        	   <span ng-if="noderp.itemType == 'Organisational Goal' ">Organizational Goal</span>
+		           <span ng-if="noderp.itemType != 'Organisational Goal' ">{{noderp.itemType}}</span>
 	        </small>
 	    </span>
 	</div>

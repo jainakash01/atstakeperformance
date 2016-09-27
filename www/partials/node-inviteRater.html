@@ -27,8 +27,8 @@
 		        	<span ng-if="nodeir.itemType == 'Root Factor' " >
 		        		<img src="images/rf.svg" class="tree-dir-img">
 		        	</span>
-		        	<span class="default-cursor">{{nodeir.itemType}}</span>
-		        	&nbsp;&nbsp;
+		        	<span ng-if="nodeir.itemType == 'Organisational Goal' " class="default-cursor">Organizational Goal</span>
+		        	<span ng-if="nodeir.itemType != 'Organisational Goal' " class="default-cursor">{{nodeir.itemType}}</span>&nbsp;&nbsp;
 		        </span>
 	        </small>
 	    </span>

@@ -27,8 +27,9 @@
 		        	<span ng-if="nodeain.itemType == 'Root Factor' " >
 		        		<img src="images/rf.svg" class="tree-dir-img">
 		        	</span>
-	        		<span class="default-cursor">{{nodeain.itemType}}</span>&nbsp;&nbsp;
-	        	</span>
+                    <span ng-if="node.itemType == 'Organisational Goal' ">Organizational Goal</span>
+		        	<span ng-if="node.itemType != 'Organisational Goal' ">{{node.itemType}}</span>&nbsp;&nbsp;	        	
+		       </span>
 	        </small>
 	    </span>
 	</div>    

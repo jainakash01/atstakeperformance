@@ -26,7 +26,8 @@
 		        	<span ng-if="nodemprev.itemType == 'Root Factor' " >
 		        		<img src="images/rf.svg" class="tree-dir-img">
 		        	</span>
-		        	<span class="default-cursor">{{nodemprev.itemType}}</span>
+		        	<span ng-if="nodemprev.itemType == 'Organisational Goal' " class="default-cursor">Organizational Goal</span>
+		        	<span ng-if="nodemprev.itemType != 'Organisational Goal' " class="default-cursor">{{nodemprev.itemType}}</span>
 		        </span>&nbsp;&nbsp;
 <!-- 		        <i class="show-cursor fa fa-plus" ng-click="addNewJson(nodemprev)"></i>
  -->		    </small>
