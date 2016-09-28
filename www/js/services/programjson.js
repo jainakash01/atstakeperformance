@@ -57,7 +57,7 @@ performAccel.service('programJson', function($http, $q) {
                         'ROOTFACT':'Humanity',
                         'DS':'Daily statement 1',
                         'rater':[],
-                        'coach' : 'stephen@atstakeperformance.com'
+                        'coach' : 'stephen@iaccel-atstakeperformance.com'
                         },
                         {
                         'training_cycle':40,
@@ -68,7 +68,7 @@ performAccel.service('programJson', function($http, $q) {
                         'ROOTFACT':'Ownership',
                         'DS':'Daily statement 2',
                         'rater':[],
-                        'coach' : 'stephen@atstakeperformance.com'
+                        'coach' : 'stephen@iaccel-atstakeperformance.com'
                         },
                         {
                         'training_cycle':50,
@@ -79,7 +79,7 @@ performAccel.service('programJson', function($http, $q) {
                         'ROOTFACT':'I thinking',
                         'DS':'Daily statement 3',
                         'rater':[],
-                        'coach' : 'stephen@atstakeperformance.com'
+                        'coach' : 'stephen@iaccel-atstakeperformance.com'
                         },
                         ]
         return jsonData;

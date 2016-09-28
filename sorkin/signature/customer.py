@@ -214,13 +214,13 @@ class CustomerApi(RequestHandler):
         customer.authenticate_steve = False
         customer.put()
 
-        sender_address = 'intense-howl-790@appspot.gserviceaccount.com'.format(app_identity.get_application_id())  #'intense-howl-790@appspot.gserviceaccount.com'
+        sender_address = 'stephen@iaccel-atstakeperformance.com'.format(app_identity.get_application_id())  #'stephen@iaccel-atstakeperformance.com'
         logging.info(sender_address);
         message = mail.EmailMessage(
         sender=sender_address,
         subject="Welcome to i@ccel")
 
-        urlStr = 'https://intense-howl-790.appspot.com/a/customer/' +  username + '/authenticate/' + hash;
+        urlStr = 'https://iaccel-atstakeperformance.appspot.com/a/customer/' +  username + '/authenticate/' + hash;
 
         message.to = submission['email']
 
@@ -241,14 +241,14 @@ class CustomerApi(RequestHandler):
 
         message.send()
         
-        urlStr2 = 'https://intense-howl-790.appspot.com/a/customer/' +  username + '/steve_authenticate/' + hash;
+        urlStr2 = 'https://iaccel-atstakeperformance.appspot.com/a/customer/' +  username + '/steve_authenticate/' + hash;
 
         
         message2 = mail.EmailMessage(
         sender=sender_address,
         subject="New request for Client : " +  username)
         
-        message2.to = 'stephen@atstakeperformance.com'
+        message2.to = 'stephen@iaccel-atstakeperformance.com'
 
         message2.body = """Dear """ + 'Steve' + """:
         
@@ -435,13 +435,13 @@ class ForgetPasswordApi(RequestHandler):
             self.error('User Not found', status = 404)
             return
 
-        sender_address = 'intense-howl-790@appspot.gserviceaccount.com'.format(app_identity.get_application_id())  #'intense-howl-790@appspot.gserviceaccount.com'
+        sender_address = 'stephen@iaccel-atstakeperformance.com'.format(app_identity.get_application_id())  #'stephen@iaccel-atstakeperformance.com'
         logging.info(sender_address);
         message = mail.EmailMessage(
         sender=sender_address,
         subject="Forgot Password Request")
 
-        urlStr = 'https://intense-howl-790.appspot.com/';
+        urlStr = 'https://iaccel-atstakeperformance.appspot.com/';
 
         message.to = username
 

@@ -61,19 +61,19 @@ class RatesInviteApi(RequestHandler):
         raters.put()
 
 
-        sender_address = 'intense-howl-790@appspot.gserviceaccount.com'.format(app_identity.get_application_id())  #'intense-howl-790@appspot.gserviceaccount.com'
+        sender_address = 'stephen@iaccel-atstakeperformance.com'.format(app_identity.get_application_id())  #'stephen@iaccel-atstakeperformance.com'
         logging.info(sender_address);
         message = mail.EmailMessage(
         sender=sender_address,
         subject="A stakeholder invited you to be an i@ccel rater")
 
-        #urlStr = 'https://sorkin-dot-intense-howl-790.appspot.com/a/customer/' +  username + '/authenticate/' + hash;
+        #urlStr = 'https://iaccel-atstakeperformance.appspot.com/a/customer/' +  username + '/authenticate/' + hash;
 
         message.to = rater_id
 
         message.body = """Dear """ + rater_id + """:
             Please visit application to see a new assignment.
-        """ + " https://intense-howl-790.appspot.com"
+        """ + " https://iaccel-atstakeperformance.appspot.com"
 
         message.send()
 

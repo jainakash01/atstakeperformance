@@ -205,7 +205,7 @@ class CronJobMailApi(RequestHandler):
 
                                                     if abs( rater_rf_rating -  user_rf_rating) >= gap_defined_for_user :
                                                           logging.info('Diffference in rating boss')
-                                                          sender_address = 'intense-howl-790@appspot.gserviceaccount.com'.format(app_identity.get_application_id())  #'intense-howl-790@appspot.gserviceaccount.com'
+                                                          sender_address = 'stephen@iaccel-atstakeperformance.com'.format(app_identity.get_application_id())  #'stephen@iaccel-atstakeperformance.com'
                                                           logging.info(sender_address);
                                                           mail_content.append({'rating_by' :  rater_id , 'rater_rating' : str(rater_rf_rating) , 'own_rating' : str(user_rf_rating)  , 'root_factor'  : curr_rf_name , 'date' : str(user_rating_summary[j]['date'].day) + '-' +  str(user_rating_summary[j]['date'].month) + '-' + str(user_rating_summary[j]['date'].year)  })
                             except Exception as err:
@@ -218,7 +218,7 @@ class CronJobMailApi(RequestHandler):
             logging.info('final mail content is ')
             logging.info(mail_content)
 
-            sender_address = 'intense-howl-790@appspot.gserviceaccount.com'.format(app_identity.get_application_id())  #'intense-howl-790@appspot.gserviceaccount.com'
+            sender_address = 'stephen@iaccel-atstakeperformance.com'.format(app_identity.get_application_id())  #'stephen@iaccel-atstakeperformance.com'
 
             message = mail.EmailMessage(
                     sender=sender_address,
@@ -390,7 +390,7 @@ class CronJobMailApi(RequestHandler):
 #
 #                                                 if abs( rater_rf_rating -  user_rf_rating) > gapRatings :
 #                                                     logging.info('Diffference in rating boss')
-#                                                     sender_address = 'intense-howl-790@appspot.gserviceaccount.com'.format(app_identity.get_application_id())  #'intense-howl-790@appspot.gserviceaccount.com'
+#                                                     sender_address = 'stephen@iaccel-atstakeperformance.com'.format(app_identity.get_application_id())  #'stephen@iaccel-atstakeperformance.com'
 #                                                     logging.info(sender_address);
 #                                                     message = mail.EmailMessage(
 #                                                     sender=sender_address,
@@ -400,7 +400,7 @@ class CronJobMailApi(RequestHandler):
 #
 #
 #
-#                                                     #urlStr = 'https://intense-howl-790.appspot.com/a/customer/' +  username + '/authenticate/' + hash;
+#                                                     #urlStr = 'https://iaccel-atstakeperformance.appspot.com/a/customer/' +  username + '/authenticate/' + hash;
 #
 #                                                     message.to = username
 #
